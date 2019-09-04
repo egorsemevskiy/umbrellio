@@ -1,0 +1,3 @@
+fileconfig:
+    max_size: 4194304
+    mime-type: text/plain

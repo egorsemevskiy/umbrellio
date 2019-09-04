@@ -1,0 +1,23 @@
+{
+    "name": "sem/filestring",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "egorsemevskiy",
+            "email": "egor.semevskiy@yandex.ru"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^8.3",
+      "ext-yaml": "*",
+      "ext-fileinfo": "*"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Sem\\Library\\" : "library/",
+            "Sem\\Test\\": "test/"
+        }
+    }
+}
