@@ -11,7 +11,8 @@
     "require": {
         "phpunit/phpunit": "^8.3",
       "ext-yaml": "*",
-      "ext-fileinfo": "*"
+      "ext-fileinfo": "*",
+      "ext-pgsql": "*"
     },
 
     "autoload": {
