@@ -8,6 +8,10 @@ require_once ('../vendor/autoload.php');
 use Sem\Library\SearchController;
 
 
-$search = new SearchController('string', "textfile.txt", "Proin porta");
+try {
+    $search = new SearchController('string', "textfile.txt", "Proin porta");
+} catch (\Exception $e) {
+    echo "Допущена ошибка: ", $e->getMessage() ."<br>\n";
+}
 
 

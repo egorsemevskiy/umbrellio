@@ -31,16 +31,16 @@ class FileToString
 
 
                     } else {
-                        echo "Неверный путь к файлу<br/>\n";
+                        throw new \Exception("Неверный путь к файлу");
                     }
                 } else {
-                    echo "слишком большой файл<br/>\n";
+                    throw new \Exception( "слишком большой файл");
                 }
             } else {
-                echo "Не тот mime type<br/>\n";
+                throw new \Exception("Не тот mime type");
             }
         }else {
-            echo "Файл не найден";
+            throw new \Exception("Файл не найден");
         }
 
     }
